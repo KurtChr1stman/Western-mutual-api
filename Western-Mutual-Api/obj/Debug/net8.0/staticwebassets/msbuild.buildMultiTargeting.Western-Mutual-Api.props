@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Western-Mutual-Api.props" />
+</Project>
