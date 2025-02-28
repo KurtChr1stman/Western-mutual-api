@@ -327,3 +327,4 @@ C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.genruntimeconfig.cache
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\ref\Western-Mutual-Api.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.sourcelink.json
