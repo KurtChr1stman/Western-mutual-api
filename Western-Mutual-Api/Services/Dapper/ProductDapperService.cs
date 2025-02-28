@@ -24,32 +24,88 @@ namespace Western_Mutual_Api.Services.Dapper
         public async Task<IEnumerable<Product>> GetProducts()
         {
             using var connection = CreateConnection();
-            var query = "SELECT * FROM Products";
-            return await connection.QueryAsync<Product>(query);
+
+            try
+            {
+                var query = "SELECT * FROM Products";
+                return await connection.QueryAsync<Product>(query);
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                throw new Exception("An error occured while fetching products from the databbase");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                throw new Exception("An error ocured while fetching products.");
+            }
+            
         }
 
         public async Task<Product> GetProductBySku(string sku)
         {
             using var connection = CreateConnection();
-            var query = @"SELECT * FROM Products WHERE Products.SKU = @SKU";
-            return await connection.QueryFirstOrDefaultAsync<Product>(query, new { SKU = sku });
+
+            try
+            {
+                var query = @"SELECT * FROM Products WHERE Products.SKU = @SKU";
+                return await connection.QueryFirstOrDefaultAsync<Product>(query, new { SKU = sku });
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                throw new Exception("An error occured while fetching product from the databbase", sqlEx);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                throw new Exception("An error ocured while fetching product.", ex);
+            }
         }
 
         public async Task<Product> CreateProduct(Product product)
         {
             using var connection = CreateConnection();
-            var query = @"INSERT INTO Products (SKU, Title, Description, Active, BuyerId)
+            try
+            {
+                var query = @"INSERT INTO Products (SKU, Title, Description, Active, BuyerId)
                           Values (@SKU, @Title, @Description, @Active, @BuyerId);
                           Select * from Products WHERE SKU = @SKU;";
-            return await connection.QuerySingleAsync<Product>(query, product);
+                return await connection.QuerySingleAsync<Product>(query, product);
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                throw new Exception("An error occured while creating product in the databbase", sqlEx);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                throw new Exception("An error ocured while creating product.", ex);
+            }
         }
 
         public async Task<bool> DeleteProductBySku(string sku)
         {
-            using var connection = CreateConnection();
-            var query = "DELETE FROM Products WHERE SKU = @SKU";
-            var rowsAffected = await connection.ExecuteAsync(query, new { SKU = sku });
-            return rowsAffected > 0;
+            try
+            {
+                using var connection = CreateConnection();
+                var query = "DELETE FROM Products WHERE SKU = @SKU";
+                var rowsAffected = await connection.ExecuteAsync(query, new { SKU = sku });
+                return rowsAffected > 0;
+            }
+            catch (SqlException sqlEx)
+            {
+                Console.WriteLine($"SQL Error: {sqlEx.Message}");
+                throw new Exception("An error occured while deleting product in the databbase", sqlEx);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                throw new Exception("An error ocured while deleting product.", ex);
+            }
+
         }
 
         public async Task<bool> UpdateProduct(Product updatedProduct)

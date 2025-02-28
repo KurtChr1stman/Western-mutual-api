@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Western-Mutual-Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6e60d5675c26262598d935f2caae0f1284ca79e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cec8d1b77bb183898d84d7f383146493a228ba64")]
 [assembly: System.Reflection.AssemblyProductAttribute("Western-Mutual-Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Western-Mutual-Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
