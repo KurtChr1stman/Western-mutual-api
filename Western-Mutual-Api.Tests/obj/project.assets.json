@@ -9937,6 +9937,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Dapper >= 2.1.66",
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.2",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "Moq >= 4.20.72",
@@ -10000,6 +10001,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.1.66, )"
+          },
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[9.0.2, )"
