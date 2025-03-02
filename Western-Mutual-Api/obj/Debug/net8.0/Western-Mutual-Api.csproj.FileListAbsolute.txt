@@ -12,6 +12,7 @@ C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\EntityFramework.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\bin\Debug\net8.0\Microsoft.Build.dll
@@ -310,6 +311,7 @@ C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.csproj.CoreCompileInputs.cache
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.sourcelink.json
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\scopedcss\bundle\Western-Mutual-Api.styles.css
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\staticwebassets.development.json
@@ -327,4 +329,3 @@ C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.genruntimeconfig.cache
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\ref\Western-Mutual-Api.dll
 C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\Users\Owner\source\repos\Western-Mutual-Api\Western-Mutual-Api\obj\Debug\net8.0\Western-Mutual-Api.sourcelink.json

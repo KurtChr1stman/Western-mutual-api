@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Data.SqlClient;
 using Western_Mutual_Api.Interfaces.Dapper;
 using Western_Mutual_Api.Models;
@@ -17,6 +18,7 @@ namespace Western_Mutual_Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetProducts()
         {
             try
@@ -37,6 +39,7 @@ namespace Western_Mutual_Api.Controllers
         }
 
         [HttpGet("{sku}")]
+        [Authorize]
         public async Task<IActionResult> GetProductBySku(string sku)
         {
             try
@@ -63,6 +66,7 @@ namespace Western_Mutual_Api.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateProduct([FromBody] Product product)
         {
             try
@@ -83,6 +87,7 @@ namespace Western_Mutual_Api.Controllers
         }
 
         [HttpDelete("{sku}")]
+        [Authorize]
         public async Task<IActionResult> DeleteProductBySku(string sku)
         {
             try
@@ -104,6 +109,7 @@ namespace Western_Mutual_Api.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<IActionResult> UpdateProduct([FromBody] Product updatedProduct)
         {
             try
