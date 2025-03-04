@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Western-Mutual-Api.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b910d30e4bb331064471ea00704fce185f5ae81e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f3c1c9f91bbeb3fa0fce87eb6c4c4d7e09a846f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Western-Mutual-Api.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Western-Mutual-Api.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
